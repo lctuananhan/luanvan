@@ -1,0 +1,22 @@
+.col-advertise {
+  background-color:#D8D8D8 ;
+  float: none;
+  margin: 100px auto;
+}
+.col-advertise label {
+  color: #2E2E2E  !important;
+  font-weight: 500;
+}
+.btn-post button {
+   margin-top: 20px;
+}
+.btn-post p {
+   color: #2E2E2E !important;
+   margin-top: 10px;
+   margin-bottom: 50px;
+}
+.col-advertise h3 {
+  font-family: arial;
+  color: #2E2E2E !important;
+  font-weight: 600;
+}

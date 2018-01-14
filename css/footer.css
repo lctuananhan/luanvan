@@ -1,0 +1,15 @@
+footer {
+  background-color: #D8D8D8;
+  margin-top: 50px;
+}
+.container-fluid .bg-grey h2{
+
+}
+.container-fluid .bg-grey p{
+  color: #000 !important;
+}
+.upper {
+  padding: 5px 10px;
+  color: #2F0B3A !important;
+  font-size: 20px;
+}

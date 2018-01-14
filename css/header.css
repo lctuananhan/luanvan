@@ -1,0 +1,19 @@
+.navbar {
+  background-color: #2F0B3A ;
+  margin-bottom: 0;
+  border: 0 solid #2F0B3A;
+}
+.navbar li a, .navbar .navbar-brand {
+  color: #848484 !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #2F0B3A !important;
+  background-color: #D8D8D8 !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+.navbar .navbar-header .navbar-brand img{
+  margin-top: -7px;
+}

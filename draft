@@ -1,0 +1,125 @@
+$.ajax({
+ url: 'ajax/ajax_book.php',
+ data: {
+     'lat': position.coords.latitude,
+     'lng': position.coords.longitude
+ },
+ type: 'POST',
+ success: function (result) {
+     // If your backend page sends something back
+     alert(result);
+ }
+});
+$(document).ready(function(){
+  var pos = new myMap();
+
+  alert(pos.lat);
+  /*$.ajax({
+    type: 'POST',
+    url: '',
+    data: {lat: position.coords.latitude, lng: position.coords.longitude}
+    success: function(data){
+      alert(data);
+    }
+  });*/
+});
+/*$(document).ready(function(){
+ $('#book_form').on('submit', function(event){
+    //alert('Hello');
+    //event.preventDefault();
+    if ($('#book_job').val() != '') {
+      var book_job = $('#book_job').val();
+    /*  $.post("ajax/ajax_book.php", {book_job: book_job}, function(data){
+
+    });*/
+      //alert(book_job);
+    /*  $("#book_job").change(function(){
+        var book_job = $("#book_job").val();
+        alert(book_job);*/
+      /*  $.post("ajax/ajax_province.php", {id_province: id_province}, function(data){
+          $(".district").html(data);
+        })
+      });*/
+      //alert('Thanh Cong');
+      //var form_data = $('#book_job').serialize();
+  /*  $.ajax({
+        url: 'ajax/ajax_book.php',
+        type: "POST",
+        data: book_job,
+        success: function(data){
+          $('#book_form')[0].reset();
+
+          //alert(data);
+        }
+      });
+
+    }
+    else {
+        alert('Vui lòng chọn việc làm!');
+    }
+  });
+    //khai báo nút submit form
+    //var submit   = $("button[type='submit']");
+    //khi thực hiện kích vào nút Login
+    //submit.click(function(){
+
+    //});
+});*/
+</script>
+<?php
+  include 'connect/dbconfig.php';
+
+
+  //echo $_POST['book_job'];
+  if (isset($_POST['book'])) {
+
+
+    # code...
+    $job = $_POST['book_job'];
+    $query = "SELECT * FROM  profile_jobseekers, duong WHERE profile_jobseekers.fk_job = $job
+                                                AND profile_jobseekers.fk_duong = duong.MaD";
+    $result = mysqli_query($conn, $query);
+    $json = array();
+    while ($row = mysqli_fetch_array($result)) {
+          //$pos = array();
+          $pos_lat[] = $row['latitude'];
+          $pos_lng[] = $row['longitude'];
+        //  array_push($json,$pos);
+      }
+
+  }
+ ?>
+ function myBook(){
+
+   $.ajax({
+         url:"ajax/ajax_book.php",
+         type: "POST",
+         data:{job:job},
+         error:function(){
+             alert("error");
+         }
+   });
+ }
+ <ul class="pagination justify-content-center text-center choose">
+   <li class="page-item">
+     <a class="page-link" href="#" aria-label="Previous">
+       <span aria-hidden="true">&laquo;</span>
+       <span class="sr-only">Previous</span>
+     </a>
+   </li>
+   <li class="page-item">
+     <a class="page-link" href="#">1</a>
+   </li>
+   <li class="page-item">
+     <a class="page-link" href="#">2</a>
+   </li>
+   <li class="page-item">
+     <a class="page-link" href="#">3</a>
+   </li>
+   <li class="page-item">
+     <a class="page-link" href="#" aria-label="Next">
+       <span aria-hidden="true">&raquo;</span>
+       <span class="sr-only">Next</span>
+     </a>
+   </li>
+ </ul>

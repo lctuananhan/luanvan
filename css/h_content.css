@@ -1,0 +1,188 @@
+.jumbotron {
+  background-color: #2F0B3A;
+  color: #FAFAFA !important;
+  font-family: arial;
+}
+.jumbotron p {
+  color: #FAFAFA !important;
+  font-family: arial;
+}
+/* css danh muc*/
+
+.container a.o h4 {
+  color: #2F0B3A !important;
+  font-family: arial;
+  font-weight: 600;
+}
+.container a.b h4 {
+  color: #2E64FE !important;
+  font-family: arial;
+  font-weight: 600;
+}
+.container a.r {
+  color:  #FE2E2E !important;
+  font-family: arial;
+  font-weight: 600;
+}
+
+.logo-small1 {
+  color: #2F0B3A;
+  font-size: 40px;
+}
+.logo-small2 {
+  color: #2E64FE;
+  font-size: 40px;
+}
+.logo-small3 {
+  color: #FE2E2E;
+  font-size: 40px;
+}
+@media screen and (max-width: 768px) {
+ .col-sm-4 {
+   text-align: center;
+   margin: 25px 0;
+ }
+}
+.downer {
+  padding: 5px 10px;
+  color: #2F0B3A !important;
+  font-size: 20px;
+  margin-top: 5%;
+  border-radius: 50%;
+  border: 1px solid  #2F0B3A;
+}
+
+#myCarousel {
+  margin-top: 70px;
+  background-color: #F5EFFB;
+}
+.carousel-inner .item img {
+  width: 100%;
+  display: block;
+  max-height: 400px !important;
+  margin: auto;
+}
+.carousel-inner .item a h3 {
+  color: #FAFAFA;
+  font-size: 30px;
+  font-weight: 500;
+}
+.carousel-inner .item a:hover {
+  color: #FAFAFA !important;
+
+}
+.carousel-inner .carousel-caption p {
+  color: #FAFAFA !important;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: 100;
+}
+/* css panel*/
+.panel1 {
+  border: 1px solid #2F0B3A ;
+  border-radius:0;
+  transition: box-shadow 0.5s;
+}
+.panel2 {
+  border: 1px solid #2E64FE ;
+  border-radius:0;
+  transition: box-shadow 0.5s;
+}
+.panel3 {
+  border: 1px solid #FE2E2E;
+  border-radius:0;
+  transition: box-shadow 0.5s;
+}
+.panel:hover {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+.panel1 .panel-footer .btn:hover {
+  border: 1px solid #2F0B3A;
+  background-color: #fff !important;
+  color: #2F0B3A;
+}
+.panel2 .panel-footer .btn:hover {
+  border: 1px solid #2E64FE;
+  background-color: #fff !important;
+  color: #2E64FE;
+}
+.panel3 .panel-footer .btn:hover {
+  border: 1px solid #FE2E2E;
+  background-color: #fff !important;
+  color: #FE2E2E;
+}
+.panel1 .panel-heading {
+  color: #FAFAFA !important;
+  background-color: #2F0B3A !important;
+  padding: 20px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+}
+.panel1 .panel-heading h4 {
+  font-weight: 600;
+  font-family: arial;
+}
+.panel2 .panel-heading {
+  color: #FAFAFA !important;
+  background-color: #2E64FE !important;
+  padding: 20px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.panel2 .panel-heading h4 {
+  font-weight: 600;
+  font-family: arial;
+}
+.panel3 .panel-heading {
+  color: #FAFAFA !important;
+  background-color: #FE2E2E !important;
+  padding: 20px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.panel3 .panel-heading h4 {
+  font-weight: 600;
+  font-family: arial;
+}
+.panel-footer {
+  background-color: #fff !important;
+}
+.panel-footer h3 {
+  font-size: 20px;
+}
+.panel-footer h4 {
+  color: #aaa;
+  font-size: 14px;
+  font-weight: 100;
+}
+.panel1 .panel-footer .btn {
+  margin: 15px 0;
+  background-color: #2F0B3A;
+  color: #fff;
+}
+.panel2 .panel-footer .btn {
+  margin: 15px 0;
+  background-color: #2E64FE;
+  color: #fff;
+}
+.panel3 .panel-footer .btn {
+  margin: 15px 0;
+  background-color: #FE2E2E;
+  color: #fff;
+}
+.rowpanel {
+  margin-top: 50px;
+}
+.row-panel {
+  margin-top: 50px;
+}

@@ -1,0 +1,25 @@
+.col-login {
+  background-color:#D8D8D8 ;
+  float: none;
+  margin: 100px auto;
+}
+.col-call {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.col-call1 {
+  margin-bottom: 50px;
+}
+.col-login label {
+  color:  #2E2E2E !important;
+  font-weight: 500;
+}
+.col-login p {
+  color:  #2E2E2E !important;
+  font-weight: 500;
+}
+.col-login h3 {
+  font-family: arial;
+  color: #2E2E2E !important;
+  font-weight: 600;
+}
